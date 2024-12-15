@@ -1,7 +1,7 @@
 interface TabContentProps {
-  title: string;
-  code: string;
-  description: string;
+  title: string
+  code: string
+  description: string
 }
 
 const TabContent = (props: TabContentProps) => {
@@ -13,7 +13,7 @@ const TabContent = (props: TabContentProps) => {
         <code>{props.code}</code>
       </pre>
     </div>
-  );
-};
+  )
+}
 
-export default TabContent;
+export default TabContent

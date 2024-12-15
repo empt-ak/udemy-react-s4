@@ -1,8 +1,8 @@
-import { ComponentPropsWithoutRef, ReactNode } from "react";
+import { ComponentPropsWithoutRef, ReactNode } from 'react'
 
-export interface SectionProps extends ComponentPropsWithoutRef<"section"> {
-  title: string;
-  children?: ReactNode;
+export interface SectionProps extends ComponentPropsWithoutRef<'section'> {
+  title: string
+  children?: ReactNode
 }
 const Section = ({ title, children, ...props }: SectionProps) => {
   return (
@@ -10,7 +10,7 @@ const Section = ({ title, children, ...props }: SectionProps) => {
       <h2>{title}</h2>
       {children}
     </section>
-  );
-};
+  )
+}
 
-export default Section;
+export default Section

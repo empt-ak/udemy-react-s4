@@ -1,5 +1,5 @@
-import Examples from "../Examples/Examples.tsx";
-import CoreConcepts from "../CoreConcepts/CoreConcepts.tsx";
+import Examples from '../Examples/Examples.tsx'
+import CoreConcepts from '../CoreConcepts/CoreConcepts.tsx'
 
 const Main = () => {
   return (
@@ -7,7 +7,7 @@ const Main = () => {
       <CoreConcepts />
       <Examples />
     </main>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

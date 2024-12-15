@@ -1,59 +1,59 @@
-import componentsImg from "./assets/components.png";
-import propsImg from "./assets/config.png";
-import jsxImg from "./assets/jsx-ui.png";
-import stateImg from "./assets/state-mgmt.png";
+import componentsImg from './assets/components.png'
+import propsImg from './assets/config.png'
+import jsxImg from './assets/jsx-ui.png'
+import stateImg from './assets/state-mgmt.png'
 export interface Data {
-  image: string;
-  title: string;
-  description: string;
+  image: string
+  title: string
+  description: string
 }
 
 export interface ExampleSection {
-  title: string;
-  description: string;
-  code: string;
+  title: string
+  description: string
+  code: string
 }
 export interface Example {
-  [key: string]: ExampleSection;
+  [key: string]: ExampleSection
 }
 
 export const CORE_CONCEPTS: Data[] = [
   {
     image: componentsImg,
-    title: "Components",
-    description: "The core UI building block - compose the user interface by combining multiple components.",
+    title: 'Components',
+    description: 'The core UI building block - compose the user interface by combining multiple components.',
   },
   {
     image: jsxImg,
-    title: "JSX",
-    description: "Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.",
+    title: 'JSX',
+    description: 'Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.',
   },
   {
     image: propsImg,
-    title: "Props",
-    description: "Make components configurable (and therefore reusable) by passing input data to them.",
+    title: 'Props',
+    description: 'Make components configurable (and therefore reusable) by passing input data to them.',
   },
   {
     image: stateImg,
-    title: "State",
-    description: "React-managed data which, when changed, causes the component to re-render & the UI to update.",
+    title: 'State',
+    description: 'React-managed data which, when changed, causes the component to re-render & the UI to update.',
   },
-];
+]
 
 export const EXAMPLES: Example = {
   components: {
-    title: "Components",
+    title: 'Components',
     description:
-      "Components are the building blocks of React applications. A component is a self-contained module (HTML + optional CSS + JS) that renders some output.",
+      'Components are the building blocks of React applications. A component is a self-contained module (HTML + optional CSS + JS) that renders some output.',
     code: `
 function Welcome() {
   return <h1>Hello, World!</h1>;
 }`,
   },
   tsx: {
-    title: "TSX",
+    title: 'TSX',
     description:
-      "TSX is a syntax extension to JavaScript. It is similar to a template language, but it has full power of JavaScript (e.g., it may output dynamic content).",
+      'TSX is a syntax extension to JavaScript. It is similar to a template language, but it has full power of JavaScript (e.g., it may output dynamic content).',
     code: `
 <div>
   <h1>Welcome {userName}</h1>
@@ -61,17 +61,17 @@ function Welcome() {
 </div>`,
   },
   props: {
-    title: "Props",
-    description: "Components accept arbitrary inputs called props. They are like function arguments.",
+    title: 'Props',
+    description: 'Components accept arbitrary inputs called props. They are like function arguments.',
     code: `
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }`,
   },
   state: {
-    title: "State",
+    title: 'State',
     description:
-      "State allows React components to change their output over time in response to user actions, network responses, and anything else.",
+      'State allows React components to change their output over time in response to user actions, network responses, and anything else.',
     code: `
 function Counter() {
   const [isVisible, setIsVisible] = useState(false);
@@ -88,4 +88,4 @@ function Counter() {
   );
 }`,
   },
-};
+}

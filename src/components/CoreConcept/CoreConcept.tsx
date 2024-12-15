@@ -1,21 +1,22 @@
-import "./CoreConcept.css";
+import './CoreConcept.css'
+import { CSSProperties, ReactNode } from 'react'
 
 interface CoreConceptProps {
-  title: string;
-  description: string;
-  image: string;
-  children?: React.ReactNode;
-  style?: React.CSSProperties;
+  title: string
+  description: string
+  image: string
+  children?: ReactNode
+  style?: CSSProperties
 }
 
-const CoreConcept = (props: CoreConceptProps) => {
+const CoreConcept = ({ title, description, image }: CoreConceptProps) => {
   return (
     <li>
-      <img src={props.image} alt={props.title} />
-      <h3>{props.title}</h3>
-      <p>{props.description}</p>
+      <img src={image} alt={title} />
+      <h3>{title}</h3>
+      <p>{description}</p>
     </li>
-  );
-};
+  )
+}
 
-export default CoreConcept;
+export default CoreConcept
