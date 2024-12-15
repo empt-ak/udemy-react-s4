@@ -1,16 +1,16 @@
 import { CORE_CONCEPTS } from "../../data.ts";
 import CoreConcept from "../CoreConcept/CoreConcept.tsx";
+import Section from "../Section/Section.tsx";
 
 const CoreConcepts = () => {
   return (
-    <section id="core-concepts">
-      <h2>Core concepts</h2>
+    <Section id="core-concepts" title="Core Concepts">
       <ul>
         {CORE_CONCEPTS.map((d, i) => {
           return <CoreConcept key={"cc-" + i} {...d} />;
         })}
       </ul>
-    </section>
+    </Section>
   );
 };
 
