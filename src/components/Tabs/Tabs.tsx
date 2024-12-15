@@ -3,12 +3,14 @@ import { ReactNode } from 'react'
 export interface TabsProps {
   children?: ReactNode
   buttons?: ReactNode
+  buttonsContainer: string
 }
 
-const Tabs = ({ children, buttons }: TabsProps) => {
+const Tabs = ({ buttonsContainer, children, buttons }: TabsProps) => {
+  const ButtonsContainer = buttonsContainer
   return (
     <>
-      <menu>{buttons}</menu>
+      <ButtonsContainer>{buttons}</ButtonsContainer>
       {children}
     </>
   )

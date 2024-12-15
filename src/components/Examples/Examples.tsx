@@ -25,6 +25,7 @@ const Examples = () => {
   return (
     <Section title="Examples" id="examples">
       <Tabs
+        buttonsContainer="menu"
         buttons={Object.keys(EXAMPLES).map((d, i) => {
           return (
             <TabButton key={'examples-' + i} isSelected={selectedTab === d} onClick={() => handleSelect(d as ButtonType)}>
